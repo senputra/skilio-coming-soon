@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"skilio-coming-soon",
+    "site": "skilio-coming-soon",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -11,6 +11,17 @@
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
       }
     ]
   }
